@@ -5,7 +5,7 @@ struct Node {
    int data;
    struct Node *next;
 };
-struct Node* head = NULL;
+struct Node* head;
 void insert(int new_data) {
    struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
    new_node->data = new_data;
@@ -28,5 +28,6 @@ int main() {
    insert(9);
    cout<<"The linked list is: ";
    display();
+   cout<<endl;
    return 0;
 }

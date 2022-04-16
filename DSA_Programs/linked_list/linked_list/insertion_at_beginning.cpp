@@ -19,7 +19,7 @@ void display(){
     struct Node* ptr;
     ptr = head;
     while (ptr != NULL){
-        cout<<ptr -> data<<" ";
+        cout<<ptr -> data<<" "<<endl;
         ptr = ptr -> next;
     }
 }

@@ -7,6 +7,7 @@ struct node{
 };
 
 struct node* head = NULL;
+
 void insert(int data, int n){
     struct node* temp1 = (struct node*)malloc(sizeof(struct node));
     temp1 -> data = data;
@@ -36,7 +37,7 @@ int main(){
     head = NULL;
     insert(2, 1);
     insert(3, 2);
-    insert(4, 1);
-    insert(5, 2);
+    insert(4, 3);
+    insert(5, 4);
     print();
 }
