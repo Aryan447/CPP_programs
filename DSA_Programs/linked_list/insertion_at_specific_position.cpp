@@ -28,9 +28,10 @@ void insert(int data, int n){
 void print(){
     node* temp = head;
     while(temp != NULL){
-        cout<<temp -> data<<endl;
+        cout<<temp -> data<<" ";
         temp = temp -> next;
     }
+    cout<<endl;
 }
 
 int main(){
